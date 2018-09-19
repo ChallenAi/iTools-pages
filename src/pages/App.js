@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import format from 'date-fns/format';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
             format(new Date(), 'YYYY MMMM do, h:mm:ss')
           }
         </p>
+        <Link to="/404">404 page</Link>
       </div>
     );
   }
